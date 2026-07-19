@@ -1,0 +1,54 @@
+
+:root{--vert:#0F3D2E;--vert2:#1B4332;--accent:#2D8A5F;--or:#C9A227;--creme:#FAF8F4;--txt:#25302B;--wa:#25D366;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',-apple-system,Segoe UI,Roboto,sans-serif;background:var(--creme);color:var(--txt);line-height:1.55}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:680px;margin:0 auto;padding:0 18px}
+header.top{background:linear-gradient(135deg,var(--vert) 0%,var(--vert2) 100%);color:#fff;padding:14px 0}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:Georgia,'Times New Roman',serif;font-size:1.25rem;font-weight:700;letter-spacing:.3px}
+.logo span{color:var(--or)}
+.tag{font-size:.7rem;opacity:.85;letter-spacing:.14em;text-transform:uppercase}
+.hero{background:linear-gradient(160deg,var(--vert) 0%,var(--vert2) 70%,#245B41 100%);color:#fff;padding:38px 0 44px;text-align:center}
+.hero h1{font-family:Georgia,serif;font-size:1.7rem;line-height:1.25;margin-bottom:10px}
+.hero p{opacity:.9;font-size:.95rem;max-width:480px;margin:0 auto}
+.hero .pills{margin-top:18px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.pill{border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:5px 14px;font-size:.75rem}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:26px 0 10px}
+@media(max-width:430px){.grid{grid-template-columns:1fr}}
+.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 24px rgba(15,61,46,.10);transition:transform .15s}
+.card:active{transform:scale(.98)}
+.card .ph{height:150px;background-size:cover;background-position:center;position:relative}
+.card .ph.nophoto{display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,#E8F3EC,#D2E7DA)}
+.badge{position:absolute;top:10px;left:10px;font-size:.66rem;font-weight:600;padding:4px 10px;border-radius:999px;color:#fff;background:var(--accent)}
+.badge.soon{background:var(--or)}
+.card .in{padding:12px 14px 14px}
+.card h3{font-size:.98rem;color:var(--vert)}
+.card .or{font-size:.78rem;color:#6b7a72;margin-top:2px}
+.section-t{font-family:Georgia,serif;color:var(--vert);font-size:1.25rem;margin:26px 0 4px}
+.gal{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:18px 0 6px;-webkit-overflow-scrolling:touch}
+.gal img{scroll-snap-align:center;border-radius:16px;width:86%;flex:none;box-shadow:0 8px 26px rgba(15,61,46,.16)}
+.cap{font-size:.75rem;color:#6b7a72;font-style:italic;margin-bottom:8px}
+.nophoto-hero{margin:18px 0;border-radius:18px;padding:44px 20px;text-align:center;background:linear-gradient(135deg,#E8F3EC,#D2E7DA);color:var(--vert)}
+.nophoto-hero .e{font-size:3.4rem}
+.nophoto-hero p{font-size:.85rem;margin-top:8px}
+.specs{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 24px rgba(15,61,46,.08);margin:14px 0}
+.specs .row{display:flex;justify-content:space-between;gap:14px;padding:11px 16px;border-bottom:1px solid #F0EEE8;font-size:.86rem}
+.specs .row:last-child{border-bottom:none}
+.specs .k{color:#6b7a72}
+.specs .v{font-weight:600;text-align:right;color:var(--vert2)}
+.note{font-size:.8rem;color:#6b7a72;margin:12px 2px 90px}
+.wa-btn{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--wa);color:#fff;font-weight:700;border-radius:999px;padding:15px 22px;font-size:.95rem;box-shadow:0 8px 22px rgba(37,211,102,.4)}
+.wa-fixed{position:fixed;left:16px;right:16px;bottom:14px;z-index:50;max-width:648px;margin:0 auto}
+.wa-ico{width:22px;height:22px}
+.crumb{font-size:.75rem;color:#6b7a72;padding:14px 0 0}
+.crumb a{color:var(--accent);font-weight:600}
+h1.pt{font-family:Georgia,serif;color:var(--vert);font-size:1.55rem;margin-top:6px}
+.sub{color:#6b7a72;font-size:.9rem;margin-top:2px}
+.desc{margin:12px 0 0;font-size:.92rem}
+footer{background:var(--vert2);color:#fff;padding:26px 0 100px;margin-top:40px;font-size:.8rem}
+footer .wrap{display:flex;flex-direction:column;gap:6px}
+footer a{color:#BFDCCB}
+.exclu{display:inline-block;background:var(--or);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:12px}
+.contact-card{background:#fff;border-radius:18px;box-shadow:0 6px 24px rgba(15,61,46,.08);padding:22px;margin:20px 0;text-align:center}
+.contact-card .big{font-size:1.1rem;font-weight:700;color:var(--vert)}

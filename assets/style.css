@@ -52,3 +52,10 @@ footer a{color:#BFDCCB}
 .exclu{display:inline-block;background:var(--or);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:12px}
 .contact-card{background:#fff;border-radius:18px;box-shadow:0 6px 24px rgba(15,61,46,.08);padding:22px;margin:20px 0;text-align:center}
 .contact-card .big{font-size:1.1rem;font-weight:700;color:var(--vert)}
+
+/* --- Lightbox photo zoom --- */
+.gal img{cursor:zoom-in}
+#lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:200;align-items:center;justify-content:center;padding:20px}
+#lightbox.open{display:flex}
+#lightbox img{max-width:100%;max-height:100%;border-radius:8px}
+

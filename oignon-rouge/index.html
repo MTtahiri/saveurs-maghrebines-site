@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
@@ -39,4 +39,13 @@
 <div>WhatsApp : +33 6 19 25 75 88 · <a href="mailto:contact@flash-jour.com">contact@flash-jour.com</a></div>
 <div style="opacity:.6;margin-top:8px">© 2026 Saveurs Maghrébines — <a href="/contact/">Contact</a></div>
 </div></footer>
+<div id="lightbox" onclick="this.classList.remove('open')"><img id="lightbox-img" src="" alt=""></div>
+<script>
+document.querySelectorAll('.gal img').forEach(function(img){
+  img.addEventListener('click', function(){
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox').classList.add('open');
+  });
+});
+</script>
 </body></html>
